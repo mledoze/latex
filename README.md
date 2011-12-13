@@ -1,5 +1,5 @@
-== latex templates ==
+# latex templates
 this repository contains simple latex templates for simple (but beautiful!) latex documents.
 
-== license ==
+# license
 none: public domain
