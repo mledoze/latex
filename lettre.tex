@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX french lettre template
+% by Mohammed Le Doze (mohammed.ledoze@gmail.com)
+% https://github.com/mledoze/latex
+% License: none (public domain)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% package documentation: http://www.ctan.org/pkg/<package-name>
+\documentclass[12pt]{lettre}
+
+\usepackage[utf8]{inputenc}					% UTF-8 input encoding
+\usepackage[english,francais]{babel} 		% francais is used first
+\usepackage{lmodern}						% Use latin modern fonts
+\usepackage[T1]{fontenc} 					% Use Type 1 encoding
+
+%%%%%%%
+% Fonts
+%%%%%%%
+%\usepackage[sc]{mathpazo}					% palatino font
+\usepackage[bitstream-charter]{mathdesign}	% bitstream charter font
+\usepackage{microtype} 						% provides micro-typographic enhancements
+\usepackage[parfill]{parskip}				% new line between paragraphs
+
+\usepackage{aeguill} 						% french quotation marks (« »); use \og and \fg{}
+\usepackage{graphicx} 						% enhanced support for graphics.
+\graphicspath{{./img/}}						% path for graphics or images
+\usepackage{hyperref} 						% extensive support for hypertext; use \url{my_url} or \href{my_url}{description}
+\usepackage{numprint} 						% print numbers with separators (1 000 or 1,000); use \numprint{}
+
+%%%%%%%%%%%%%%%%%%%
+% PDF configuration
+%%%%%%%%%%%%%%%%%%%
+\hypersetup {
+    pdftitle={},    						% title
+    pdfauthor={},     						% author
+    pdfcreator={},   						% creator of the document
+    pdfproducer={latex}, 					% producer of the document
+    pdfkeywords={key1} {key2} {key3}, 		% list of keywords
+    colorlinks=true,       					% false: boxed links; true: colored links
+    linkcolor=black,          				% color of internal links
+    citecolor=black,        				% color of links to bibliography
+    filecolor=black,      					% color of file links
+    urlcolor=black           				% color of external links
+}
+
+\begin{document} 
+	\begin{letter}{} % nom et adresse du destinataire
+
+	\def\concname{Objet :~}
+	\conc{} 									% objet de la lettre
+
+	\address{} 									% nom et adresse de l'expéditeur
+	\lieu{} 									% utilisé pour : Paris, le ...
+	\date{\today} 								% date d'envoi
+	\notelephone \nofax							% utiliser \telephone{..} pour ajouter un numéro de téléphone
+	\signature{}								% nom de l'expéditeur
+
+	\opening{Madame, Monsieur,} 
+
+		% corps de la lettre
+
+	\closing{} 									% formule de fin  
+
+	%\cc{} 										% liste des personnes en copie
+	%\ps{} 										% Post Scriptum
+	%\encl} 									% liste des pièces jointes
+	\end{letter} 
+\end{document}
