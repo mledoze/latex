@@ -2,7 +2,7 @@
 % LaTeX french lettre template
 % by Mohammed Le Doze (mohammed.ledoze@gmail.com)
 % https://github.com/mledoze/latex
-% License: none (public domain)
+% License: none
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % package documentation: http://www.ctan.org/pkg/<package-name>
@@ -13,9 +13,9 @@
 \usepackage{lmodern}						% Use latin modern fonts
 \usepackage[T1]{fontenc} 					% Use Type 1 encoding
 
-%%%%%%%
-% Fonts
-%%%%%%%
+%%%%%%%%%
+% Polices
+%%%%%%%%%
 %\usepackage[sc]{mathpazo}					% palatino font
 \usepackage[bitstream-charter]{mathdesign}	% bitstream charter font
 \usepackage{microtype} 						% provides micro-typographic enhancements
@@ -28,7 +28,7 @@
 \usepackage{numprint} 						% print numbers with separators (1 000 or 1,000); use \numprint{}
 
 %%%%%%%%%%%%%%%%%%%
-% PDF configuration
+% Configuration PDF
 %%%%%%%%%%%%%%%%%%%
 \hypersetup {
     pdftitle={},    						% title
@@ -43,6 +43,9 @@
     urlcolor=black           				% color of external links
 }
 
+%%%%%%%%%%%%%%%%%%%%
+% Corps de la lettre
+%%%%%%%%%%%%%%%%%%%%
 \begin{document} 
 	\begin{letter}{} % nom et adresse du destinataire
 
@@ -63,6 +66,6 @@
 
 	%\cc{} 										% liste des personnes en copie
 	%\ps{} 										% Post Scriptum
-	%\encl} 									% liste des pièces jointes
+	%\encl{} 									% liste des pièces jointes
 	\end{letter} 
 \end{document}
