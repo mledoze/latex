@@ -1,25 +1,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LaTeX french lettre template
-% by Mohammed Le Doze (mohammed.ledoze@gmail.com)
+% by Mohammed Le Doze
 % https://github.com/mledoze/latex
-% License: none
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % package documentation: http://www.ctan.org/pkg/<package-name>
 \documentclass[12pt]{lettre}
 
 \usepackage[utf8]{inputenc}					% UTF-8 input encoding
-\usepackage[english,francais]{babel} 		% francais is used first
+\usepackage[english,francais]{babel} 				% francais is used first
 \usepackage{lmodern}						% Use latin modern fonts
 \usepackage[T1]{fontenc} 					% Use Type 1 encoding
 
-%%%%%%%%%
-% Polices
-%%%%%%%%%
+%%%%%%%
+% Fonts
+%%%%%%%
 %\usepackage[sc]{mathpazo}					% palatino font
-\usepackage[bitstream-charter]{mathdesign}	% bitstream charter font
+\usepackage[bitstream-charter]{mathdesign}			% bitstream charter font
 \usepackage{microtype} 						% provides micro-typographic enhancements
-\usepackage[parfill]{parskip}				% new line between paragraphs
+\usepackage[parfill]{parskip}					% new line between paragraphs
 
 \usepackage{aeguill} 						% french quotation marks (« »); use \og and \fg{}
 \usepackage{graphicx} 						% enhanced support for graphics.
@@ -28,44 +27,44 @@
 \usepackage{numprint} 						% print numbers with separators (1 000 or 1,000); use \numprint{}
 
 %%%%%%%%%%%%%%%%%%%
-% Configuration PDF
+% PDF Configuration
 %%%%%%%%%%%%%%%%%%%
 \hypersetup {
     pdftitle={},    						% title
     pdfauthor={},     						% author
     pdfcreator={},   						% creator of the document
     pdfproducer={latex}, 					% producer of the document
-    pdfkeywords={key1} {key2} {key3}, 		% list of keywords
+    pdfkeywords={key1} {key2} {key3}, 				% list of keywords
     colorlinks=true,       					% false: boxed links; true: colored links
-    linkcolor=black,          				% color of internal links
-    citecolor=black,        				% color of links to bibliography
+    linkcolor=black,          					% color of internal links
+    citecolor=black,        					% color of links to bibliography
     filecolor=black,      					% color of file links
-    urlcolor=black           				% color of external links
+    urlcolor=black           					% color of external links
 }
 
 %%%%%%%%%%%%%%%%%%%%
-% Corps de la lettre
+% Letter body
 %%%%%%%%%%%%%%%%%%%%
 \begin{document} 
-	\begin{letter}{} % nom et adresse du destinataire
+	\begin{letter}{} 					% name and address
 
 	\def\concname{Objet :~}
-	\conc{} 									% objet de la lettre
+	\conc{} 						% subject line
 
-	\address{} 									% nom et adresse de l'expéditeur
-	\lieu{} 									% utilisé pour : Paris, le ...
-	\date{\today} 								% date d'envoi
-	\notelephone \nofax							% utiliser \telephone{..} pour ajouter un numéro de téléphone
-	\signature{}								% nom de l'expéditeur
+	\address{} 						% your name and return address
+	\lieu{} 						% used for: Paris, the <date>...
+	\date{\today} 						% date of dispatch
+	\notelephone \nofax					% use \telephone{..} to add a phone number
+	\signature{}						% your signature
 
-	\opening{Madame, Monsieur,} 
+	\opening{}
 
-		% corps de la lettre
+		% letter body
 
-	\closing{} 									% formule de fin  
+	\closing{} 						% letter closing
 
-	%\cc{} 										% liste des personnes en copie
-	%\ps{} 										% Post Scriptum
-	%\encl{} 									% liste des pièces jointes
+	%\cc{} 							% list of the recipients
+	%\ps{} 							% Post Scriptum
+	%\encl{} 						% list of attachments
 	\end{letter} 
 \end{document}
